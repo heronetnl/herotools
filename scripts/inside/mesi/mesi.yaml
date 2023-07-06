@@ -7,7 +7,6 @@ sensor:
     id: temperature
     unit_of_measurement: ${TM}
     address: 0x1c0000031edd2a28
-    update_interval: 30s
 
   - platform: aht10
     temperature:
