@@ -65,5 +65,5 @@ button:
     name: "${device_name} ${Shutdown}"
 
   # Factory reset
-  - platform: factory_restet
+  - platform: factory_reset
     name: "${Factory_reset} ${device_name}"
