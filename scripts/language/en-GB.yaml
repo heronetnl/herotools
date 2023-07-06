@@ -17,20 +17,20 @@ substitutions:
   Formaldehyde: "Formaldehyde"
 
   # Pms
-  Particulate_Matter_<1.0µm_Concentration_at_standard_particle: "Particulate Matter <1.0µm Concentration at standard particle"
-  Particulate_Matter_<2.5µm_Concentration_at_standard_particle: "Particulate Matter <2.5µm Concentration at standard particle"
-  Particulate_Matter_<10.0µm_Concentration_at_standard_particle: "Particulate Matter <10.0µm Concentration at standard particle"
+  Particulate_Matter_1.0µm_Concentration_at_standard_particle: "Particulate Matter <1.0µm Concentration at standard particle"
+  Particulate_Matter_2.5µm_Concentration_at_standard_particle: "Particulate Matter <2.5µm Concentration at standard particle"
+  Particulate_Matter_10.0µm_Concentration_at_standard_particle: "Particulate Matter <10.0µm Concentration at standard particle"
 
-  Particulate_Matter_<1.0µm_Concentration_under_atmospheric_environment: "Particulate Matter <1.0µm Concentration under atmospheric environment"
-  Particulate_Matter_<2.5µm_Concentration_under_atmospheric_environment: "Particulate Matter <2.5µm Concentration under atmospheric environment"
-  Particulate_Matter_<10.0µm_Concentration_under_atmospheric_environment: "Particulate Matter <10.0µm Concentration under atmospheric environment"
+  Particulate_Matter_1.0µm_Concentration_under_atmospheric_environment: "Particulate Matter <1.0µm Concentration under atmospheric environment"
+  Particulate_Matter_2.5µm_Concentration_under_atmospheric_environment: "Particulate Matter <2.5µm Concentration under atmospheric environment"
+  Particulate_Matter_10.0µm_Concentration_under_atmospheric_environment: "Particulate Matter <10.0µm Concentration under atmospheric environment"
 
-  Particles_>_0.3um_/_0.1L_air: "Particles > 0.3um / 0.1L air"
-  Particles_>_0.5um_/_0.1L_air: "Particles > 0.5um / 0.1L air"
-  Particles_>_1.0um_/_0.1L_air: "Particles > 1.0um / 0.1L air"
-  Particles_>_2.5um_/_0.1L_air: "Particles > 2.5um / 0.1L air"
-  Particles_>_5.0um_/_0.1L_air: "Particles > 5.0um / 0.1L air"
-  Particles_>_10.0um_/_0.1L_air: "Particles > 10.0um / 0.1L air"
+  Particles_0.3um_/_0.1L_air: "Particles > 0.3um / 0.1L air"
+  Particles_0.5um_/_0.1L_air: "Particles > 0.5um / 0.1L air"
+  Particles_1.0um_/_0.1L_air: "Particles > 1.0um / 0.1L air"
+  Particles_2.5um_/_0.1L_air: "Particles > 2.5um / 0.1L air"
+  Particles_5.0um_/_0.1L_air: "Particles > 5.0um / 0.1L air"
+  Particles_10.0um_/_0.1L_air: "Particles > 10.0um / 0.1L air"
 
   # Air Quality
   Excellent: "Excellent"
