@@ -1,0 +1,15 @@
+# Screen 3,5, 320x480, 16.7M-color
+packages:
+  remote_package:
+    url: https://github.com/heronetnl/herotool/
+    ref: main
+    files:
+      - scripts/protocols/spi/spi_1.yaml
+    refresh: 0d
+
+display:
+  - platform: ili9xxx
+    model: ili9488
+    dc_pin: GPIO35
+    reset_pin: GPIO25
+    lambda: |-

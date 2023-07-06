@@ -1,0 +1,6 @@
+components/
+scripts/language/empty.yaml
+secrets.yaml
+empty.yaml
+.esphome
+.vscode

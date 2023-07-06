@@ -1,0 +1,5 @@
+uart:
+  - id: pmsx003
+    tx_pin: gpio1
+    rx_pin: gpio3
+    baud_rate: 9600

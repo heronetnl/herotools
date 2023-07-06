@@ -1,0 +1,43 @@
+substitutions:
+  # basic file
+  Uptime: "Uptime"
+  Wifi_singal: "Wifi signaal"
+  Ip_address: "IP-adres"
+  Network: "Netwerk"
+  Mac_address: "MAC-adres"
+  Restart: "Opnieuw opstarten"
+  Shutdown: "Afsluiten"
+  Factory_reset: "Fabrieksinstellingen"
+  error: "error"
+
+  # Environmental
+  Temperature: "Temperatuur"
+  Humidity: "Vochtigheid"
+  Pressure: "Lucht druk"
+  Formaldehyde: "Formaldehyde"
+
+  # Pms
+  Particulate_Matter_<1.0µm_Concentration_at_standard_particle: "Fijnstof <1,0 µm Concentratie bij standaarddeeltjes"
+  Particulate_Matter_<2.5µm_Concentration_at_standard_particle: "Fijnstof <2,5 µm Concentratie bij standaarddeeltjes"
+  Particulate_Matter_<10.0µm_Concentration_at_standard_particle: "Fijnstof <10,0 µm Concentratie bij standaarddeeltjes"
+
+  Particulate_Matter_<1.0µm_Concentration_under_atmospheric_environment: "Fijnstof <1,0 µm Concentratie onder atmosferische omgeving"
+  Particulate_Matter_<2.5µm_Concentration_under_atmospheric_environment: "Fijnstof <2,5 µm Concentratie onder atmosferische omgeving"
+  Particulate_Matter_<10.0µm_Concentration_under_atmospheric_environment: "Fijnstof <10,0 µm Concentratie onder atmosferische omgeving"
+
+  Particles_>_0.3um_/_0.1L_air: "Deeltjes > 0,3um / 0,1L lucht"
+  Particles_>_0.5um_/_0.1L_air: "Deeltjes > 0,5um / 0,1L lucht"
+  Particles_>_1.0um_/_0.1L_air: "Deeltjes > 1,0um / 0,1L lucht"
+  Particles_>_2.5um_/_0.1L_air: "Deeltjes > 2,5um / 0,1L lucht"
+  Particles_>_5.0um_/_0.1L_air: "Deeltjes > 5,0um / 0,1L lucht"
+  Particles_>_10.0um_/_0.1L_air: "Deeltjes > 10,0um / 0,1L lucht"
+
+  # Air Quality
+  Excellent: "Uitstekend"
+  Good: "Goed"
+  Lightly_polluted: "Licht vervuild"
+  Moderately_polluted: "Matig vervuild"
+  Heavily_polluted: "Zwaar vervuild"
+  Severely_polluted: "Ernstig vervuild"
+  Extremely_polluted: "Extreem vervuild"
+

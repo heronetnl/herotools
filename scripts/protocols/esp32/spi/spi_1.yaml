@@ -1,0 +1,5 @@
+spi:
+  - id: SPI_1
+    clk_pin: GPIO18
+    mosi_pin: GPIO23
+    niso_pin: GPIO19

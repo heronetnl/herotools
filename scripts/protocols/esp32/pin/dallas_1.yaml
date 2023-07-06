@@ -1,0 +1,3 @@
+dallas:
+  - pin: GPIO34
+    id: dallas_1

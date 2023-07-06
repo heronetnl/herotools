@@ -1,0 +1,15 @@
+sensor:
+
+  # AHT10 sensor for temperature and humidity
+	# temperature data wil not be send to homeassistent
+	- platform: aht21
+  temperature:
+    #name: "${device_name} ${Temperature}"
+    id: aht-temp
+    unit_of_measurement: ${TM}
+    internal: true
+  humidity:
+    name: "${device_name} ${Humidity}"
+    id: aht-hum
+  i2c_id: i2c_1
+  update_interval: 30s
