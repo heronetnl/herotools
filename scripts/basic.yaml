@@ -54,7 +54,7 @@ text_sensor:
       icon: mdi:folder-key-network-outline
 
 # Buttons #
-buttton:
+button:
 
   # Restart button
   - platform: restart
