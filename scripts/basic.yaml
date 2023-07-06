@@ -58,7 +58,7 @@ buttton:
 
   # Restart button
   - platform: restart
-    name: "${device_name} ${restart}"
+    name: "${device_name} ${Restart}"
 
   # Shutdown button
   - platform: shutdown

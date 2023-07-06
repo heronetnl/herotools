@@ -1,7 +1,7 @@
 substitutions:
   # basic file
   Uptime: "Uptime"
-  Wifi_singal: "Wifi singal"
+  Wifi_signal: "Wifi singal"
   Ip_address: "IP-address"
   Network: "Network"
   Mac_address: "MAC-address"
