@@ -1,5 +1,5 @@
 sensor:
-  # AHT10 sensor for temperature and humidity
+  # AHT21 sensor for temperature and humidity
 	# temperature data wil not be send to homeassistent
 	- platform: aht21
     temperature:
