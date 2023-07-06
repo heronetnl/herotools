@@ -4,7 +4,7 @@ packages:
     url: https://github.com/heronetnl/herotool/
     ref: main
     files:
-      - scripts/protocols/spi/spi_1.yaml
+      - scripts/protocols/esp32/spi/spi_1.yaml
     refresh: 0d
 
 display:

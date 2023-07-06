@@ -3,25 +3,9 @@ substitutions:
   device_friendlyname: Multi_envi_sensor_inside
   device_discription: "Multi enviroment sensor inside"
 
-  # Type of Language 
-  language: "nl-NL"
-
   #### Measurement ####
   # Type of measurement for temperature: °C for Celcius, °F for Fahrenheit
   TM: "°C"
-
-  #### Sensors ####
-  # Type of bme: bme280, bme680, bmp085, bmp280
-  BME: "bme680"
-
-  # Type of aht: aht10, aht20, aht21
-  AHT: "aht21"
-
-  # Type of pms: pmsx003, pms5003s, pms5003t, pms5003ts, false
-  PMS: "pmsx003"
-
-  # Type of display: ili9488, false
-  DISPLAY: "ili9488"
 
 esp32:
   board: esp32dev
@@ -48,29 +32,36 @@ wifi:
 api:
 
 dashboard_import:
-  package_import_url: github://heronetnl/herotool/mesi.yaml@main
+  package_import_url: github://heronetnl/herotools/mesi.yaml@main
   import_full_config: true
 
 packages:
   remote_package:
-    url: https://github.com/heronetnl/herotool/
+    url: https://github.com/heronetnl/herotools
     ref: main
     files:
       # Get file's
-      - scripts/basis.yaml
+      - scripts/basic.yaml
 
       # Get language file
-      - scripts/language/${language}.yaml
+      - scripts/language/nl-NL.yaml
 
       # Get protocols file's
-      - scripts/protocols/i2c/i2c_1.yaml
-      - scripts/protocols/pin/dallas_1.yaml
-      - scripts/protocols/uart/pmsx003.yaml
+      - scripts/protocols/esp32/i2c/i2c_1.yaml
+      - scripts/protocols/esp32/pin/dallas_1.yaml
+      - scripts/protocols/esp32/uart/pmsx003.yaml
 
       # Get sensor file's
-      - scripts/inside/mesi/aht/${AHT}.yaml
-      - scripts/inside/mesi/bme/${BME}.yaml
-      - scripts/inside/mesi/pms/${PMS}.yaml
-      - scripts/inside/mesi/display/${display}.yaml
+      # Type of aht: aht10, aht20, aht21
+      - scripts/inside/mesi/aht/aht21.yaml
+
+      # Type of bme: bme280, bme680, bmp085, bmp280
+      - scripts/inside/mesi/bme/bme680.yaml
+
+      # Type of pms: pmsx003, pms5003s, pms5003t, pms5003ts, false
+      - scripts/inside/mesi/pms/pmsx003.yaml
+
+      # Type of display: ili9488, false
+      - scripts/inside/mesi/display/ili9488.yaml
 
     refresh: 0d
