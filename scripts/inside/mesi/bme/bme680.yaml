@@ -16,5 +16,5 @@ sensor:
       id: bme-hum
       internal: true
     i2c_id: i2c_1
-    address: 0x77
+    address: 0x76
     update_interval: 30s
