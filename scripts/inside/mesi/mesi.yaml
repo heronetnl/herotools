@@ -9,6 +9,18 @@ sensor:
 		address: ${dallas_address}
 		update_interval: 30s
 
+	- platform: aht10
+    temperature:
+      #name: "${device_name} ${Temperature}"
+      id: aht_temp
+      unit_of_measurement: ${TM}
+      internal: true
+    humidity:
+      name: "${device_name} ${Humidity}"
+      id: aht_hum
+    i2c_id: i2c_1
+    update_interval: 30s
+
 	# SGP30 CO₂ and Volatile Organic Compound Sensor
 	- platform: sgp30
     eco2:

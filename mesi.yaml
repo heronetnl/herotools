@@ -52,9 +52,6 @@ packages:
       - scripts/protocols/esp32/uart/pmsx003.yaml
 
       # Get sensor file's
-      # Type of aht: aht10, aht20, aht21
-      - scripts/inside/mesi/aht/aht21.yaml
-
       # Type of bme: bme280, bme680, bmp085, bmp280
       - scripts/inside/mesi/bme/bme680.yaml
 

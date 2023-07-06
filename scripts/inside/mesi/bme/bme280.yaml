@@ -4,13 +4,13 @@ sensor:
   - platform: bme280
     temperature:
       #name: "${device_name} ${Temperature}"
-      id: bme-temp
+      id: bme_temp
       internal: true
       unit_of_measurement: ${TM}
       oversampling: 16x
     pressure:
       name: "${device_name} ${Pressure}"
-      id: bme-pres
+      id: bme_pres
     humidity:
       #name: "${device_name} ${Humidity}"
       id: bme-hum

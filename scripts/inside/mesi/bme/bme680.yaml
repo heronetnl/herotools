@@ -4,7 +4,7 @@ sensor:
   - platform: bme680
     temperature:
       #name: "${device_name} ${Temperature}"
-      id: bme-temp
+      id: bme_temp
       internal: true
       unit_of_measurement: ${TM}
       oversampling: 16x
@@ -13,7 +13,7 @@ sensor:
       id: bme-pres
     humidity:
       #name: "${device_name} ${Humidity}"
-      id: bme-hum
+      id: bme_hum
       internal: true
     i2c_id: i2c_1
     address: 0x76
