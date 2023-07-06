@@ -6,7 +6,7 @@ sensor:
     name: "${device_name} Temperature"
     id: temperature
     unit_of_measurement: ${TM}
-    address: ${dallas_address}
+    address: 0x1c0000031edd2a28
     update_interval: 30s
 
   - platform: aht10
@@ -35,7 +35,7 @@ sensor:
     update_interval: 30s
     compensation:
       temperature_source: temperature
-      humidity_source: aht-hum
+      humidity_source: aht_hum
 
   # SGP40 Volatile Organic Compound Sensor
   - platform: sgp4x
@@ -45,7 +45,7 @@ sensor:
     store_baseline: true
     compensation:
       temperature_source: temperature
-      humidity_source: aht-hum
+      humidity_source: aht_hum
 
 # Text_sensoren
 text_sensor:
