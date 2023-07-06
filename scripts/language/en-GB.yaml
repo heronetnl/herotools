@@ -25,12 +25,12 @@ substitutions:
   Particulate_Matter_2_5um_Concentration_under_atmospheric_environment: "Particulate Matter <2.5µm Concentration under atmospheric environment"
   Particulate_Matter_10_0um_Concentration_under_atmospheric_environment: "Particulate Matter <10.0µm Concentration under atmospheric environment"
 
-  Particles_0_3um_/_0_1L_air: "Particles > 0.3um / 0.1L air"
-  Particles_0_5um_/_0_1L_air: "Particles > 0.5um / 0.1L air"
-  Particles_1_0um_/_0_1L_air: "Particles > 1.0um / 0.1L air"
-  Particles_2_5um_/_0_1L_air: "Particles > 2.5um / 0.1L air"
-  Particles_5_0um_/_0_1L_air: "Particles > 5.0um / 0.1L air"
-  Particles_10_0um_/_0_1L_air: "Particles > 10.0um / 0.1L air"
+  Particles_0_3um_0_1L_air: "Particles > 0.3um / 0.1L air"
+  Particles_0_5um_0_1L_air: "Particles > 0.5um / 0.1L air"
+  Particles_1_0um_0_1L_air: "Particles > 1.0um / 0.1L air"
+  Particles_2_5um_0_1L_air: "Particles > 2.5um / 0.1L air"
+  Particles_5_0um_0_1L_air: "Particles > 5.0um / 0.1L air"
+  Particles_10_0um_0_1L_air: "Particles > 10.0um / 0.1L air"
 
   # Air Quality
   Excellent: "Excellent"

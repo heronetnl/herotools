@@ -20,16 +20,16 @@ sensor:
       name: "${Particulate_Matter_10_0um_Concentration_under_atmospheric_environment}"
       id: pm_10_0
     pm_0_3um:
-      name: "${Particles_0_3um_/_0_1L_air}"
+      name: "${Particles_0_3um_0_1L_air}"
       id: pm_0_3um
     pm_0_5um:
-      name: "${Particles_0_5um_/_0_1L_air}"
+      name: "${Particles_0_5um_0_1L_air}"
       id: pm_0_5um
     pm_1_0um:
-      name: "${Particles_1_0um_/_0_1L_air}"
+      name: "${Particles_1_0um_0_1L_air}"
       id: pm_1_0um
     pm_2_5um:
-      name: "${Particles_2_5um_/_0_1L_air}"
+      name: "${Particles_2_5um_0_1L_air}"
       id: pm_2_5um
     temperature:
       #name: "${device_name} ${Temperature}"

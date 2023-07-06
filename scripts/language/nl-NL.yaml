@@ -25,12 +25,12 @@ substitutions:
   Particulate_Matter_2_5um_Concentration_under_atmospheric_environment: "Fijnstof <2,5 µm Concentratie onder atmosferische omgeving"
   Particulate_Matter_10_0um_Concentration_under_atmospheric_environment: "Fijnstof <10,0 µm Concentratie onder atmosferische omgeving"
 
-  Particles_0_3um_/_0_1L_air: "Deeltjes > 0,3um / 0,1L lucht"
-  Particles_0_5um_/_0_1L_air: "Deeltjes > 0,5um / 0,1L lucht"
-  Particles_1_0um_/_0_1L_air: "Deeltjes > 1,0um / 0,1L lucht"
-  Particles_2_5um_/_0_1L_air: "Deeltjes > 2,5um / 0,1L lucht"
-  Particles_5_0um_/_0_1L_air: "Deeltjes > 5,0um / 0,1L lucht"
-  Particles_10_0um_/_0_1L_air: "Deeltjes > 10,0um / 0,1L lucht"
+  Particles_0_3um_0_1L_air: "Deeltjes > 0,3um / 0,1L lucht"
+  Particles_0_5um_0_1L_air: "Deeltjes > 0,5um / 0,1L lucht"
+  Particles_1_0um_0_1L_air: "Deeltjes > 1,0um / 0,1L lucht"
+  Particles_2_5um_0_1L_air: "Deeltjes > 2,5um / 0,1L lucht"
+  Particles_5_0um_0_1L_air: "Deeltjes > 5,0um / 0,1L lucht"
+  Particles_10_0um_0_1L_air: "Deeltjes > 10,0um / 0,1L lucht"
 
   # Air Quality
   Excellent: "Uitstekend"
