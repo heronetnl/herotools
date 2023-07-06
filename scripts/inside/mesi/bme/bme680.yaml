@@ -10,7 +10,7 @@ sensor:
       oversampling: 16x
     pressure:
       name: "${device_name} ${Pressure}"
-      id: bme-pres
+      id: bme_pres
     humidity:
       #name: "${device_name} ${Humidity}"
       id: bme_hum

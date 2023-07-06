@@ -13,7 +13,7 @@ sensor:
       id: bme_pres
     humidity:
       #name: "${device_name} ${Humidity}"
-      id: bme-hum
+      id: bme_hum
       internal: true
     i2c_id: i2c_1
     address: 0x77
