@@ -43,4 +43,4 @@ sensor:
       id: pms-hum
       internal: true
     update_interval: 120s
-    uart_id: pmsx003
+    uart_id: PMSX003

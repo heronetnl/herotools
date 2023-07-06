@@ -38,4 +38,4 @@ sensor:
       name: "${Particles_10_0um_0_1L_air}"
       id: pm_10_0um
     update_interval: 120s
-    uart_id: pmsx003
+    uart_id: PMSX003
