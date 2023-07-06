@@ -2,40 +2,40 @@ sensor:
   - platform: pmsx003
     type: PMSX003
     pm_1_0_std:
-      name: ${Particulate_Matter_1.0µm_Concentration_at_standard_particle}
+      name: ${Particulate_Matter_1-0µm_Concentration_at_standard_particle}
       id: pm_1_0_std 
     pm_2_5_std:
-      name: ${Particulate_Matter_2.5µm_Concentration_at_standard_particle}
+      name: ${Particulate_Matter_2-5µm_Concentration_at_standard_particle}
       id: pm_2_5_std 
     pm_10_0_std:
-      name: ${Particulate_Matter_10.0µm_Concentration_at_standard_particle}
+      name: ${Particulate_Matter_10-0µm_Concentration_at_standard_particle}
       id: pm_10_0_std  
     pm_1_0:
-      name: "${Particulate_Matter_1.0µm_Concentration_under_atmospheric_environment}"
+      name: "${Particulate_Matter_1-0µm_Concentration_under_atmospheric_environment}"
       id: pm_1_0
     pm_2_5:
-      name: "${Particulate_Matter_2.5µm_Concentration_under_atmospheric_environment}"
+      name: "${Particulate_Matter_2-5µm_Concentration_under_atmospheric_environment}"
       id: pm_2_5
     pm_10_0:
-      name: "${Particulate_Matter_10.0µm_Concentration_under_atmospheric_environment}"
+      name: "${Particulate_Matter_10-0µm_Concentration_under_atmospheric_environment}"
       id: pm_10_0
     pm_0_3um:
-      name: "${Particles_0.3um_/_0.1L_air}"
+      name: "${Particles_0-3um_/_0-1L_air}"
       id: pm_0_3um
     pm_0_5um:
-      name: "${Particles_0.5um_/_0.1L_air}"
+      name: "${Particles_0-5um_/_0-1L_air}"
       id: pm_0_5um
     pm_1_0um:
-      name: "${Particles_1.0um_/_0.1L_air}"
+      name: "${Particles_1-0um_/_0-1L_air}"
       id: pm_1_0um
     pm_2_5um:
-      name: "${Particles_2.5um_/_0.1L_air}"
+      name: "${Particles_2-5um_/_0-1L_air}"
       id: pm_2_5um
     pm_5_0um:
-      name: "${Particles_5.0um_/_0.1L_air}"
+      name: "${Particles_5-0um_/_0-1L_air}"
       id: pm_5_0um
     pm_10_0um:
-      name: "${Particles_10.0um_/_0.1L_air}"
+      name: "${Particles_10-0um_/_0-1L_air}"
       id: pm_10_0um
     update_interval: 120s
     uart_id: pmsx003
