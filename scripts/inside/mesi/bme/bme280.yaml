@@ -1,21 +1,20 @@
 sensor:
-
   # BME280 sensor for temperature, pressure and humidity.
-	# temperature and humidity data wil not be send to homeassistent
+  # temperature and humidity data wil not be send to homeassistent
   - platform: bme280
-		temperature:
-			#name: "${device_name} ${Temperature}"
-			id: bme-temp
-			internal: true
-			unit_of_measurement: ${TM}
-			oversampling: 16x
-		pressure:
-			name: "${device_name} ${Pressure}"
-			id: bme-pres
-		humidity:
-			#name: "${device_name} ${Humidity}"
-			id: bme-hum
-			internal: true
-		i2c_id: i2c_1
-		address: 0x77
-		update_interval: 30s
+    temperature:
+      #name: "${device_name} ${Temperature}"
+      id: bme-temp
+      internal: true
+      unit_of_measurement: ${TM}
+      oversampling: 16x
+    pressure:
+      name: "${device_name} ${Pressure}"
+      id: bme-pres
+    humidity:
+      #name: "${device_name} ${Humidity}"
+      id: bme-hum
+      internal: true
+    i2c_id: i2c_1
+    address: 0x77
+    update_interval: 30s
