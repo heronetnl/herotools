@@ -7,6 +7,8 @@ substitutions:
   # Type of measurement for temperature: °C for Celcius, °F for Fahrenheit
   TM: "°C"
 
+  dallas_address: ""
+
 esp32:
   board: esp32dev
 
