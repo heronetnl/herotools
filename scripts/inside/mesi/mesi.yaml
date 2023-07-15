@@ -6,7 +6,7 @@ sensor:
     name: "${device_name} Temperature"
     id: temperature
     unit_of_measurement: ${TM}
-    address: ${dallas_address}
+    index: 0
 
   - platform: aht10
     temperature:
