@@ -57,23 +57,23 @@ text_sensor:
         return to_string("${Excellent}");
       }
       else if (int(id(iaq).state) >= 51 && int(id(iaq).state) <= 100) {
-        return Good;
+        return to_string("${Good}");
       }
       else if (int(id(iaq).state) >= 101 && int(id(iaq).state) <= 150) {
-        return {${Lightly_polluted}};
+        return to_string("${Lightly_polluted}");
       }
       else if (int(id(iaq).state) >= 151 && int(id(iaq).state) <= 200) {
-        return {${Moderately_polluted}};
+        return to_string("${Moderately_polluted}");
       }
       else if (int(id(iaq).state) >= 201 && int(id(iaq).state) <= 250) {
-        return {${Heavily_polluted}};
+        return to_string("${Heavily_polluted}");
       }
       else if (int(id(iaq).state) >= 251 && int(id(iaq).state) <= 350) {
-        return {${Severely_polluted}};
+        return to_string("${Severely_polluted}");
       }
       else if (int(id(iaq).state) >= 351) {
-        return {${Extremely_polluted}};
+        return to_string("${Extremely_polluted}");
       }
       else {
-        return {${error}};
+        return to_string("${error}");
       }
