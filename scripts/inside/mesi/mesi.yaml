@@ -54,7 +54,7 @@ text_sensor:
     icon: "mdi:seed"
     lambda: |-
       if ( int(id(iaq).state) <= 50) {
-        return {${Excellent}};
+        return to_string("${Excellent}")};
       }
       else if (int(id(iaq).state) >= 51 && int(id(iaq).state) <= 100) {
         return Good;
