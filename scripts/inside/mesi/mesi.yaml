@@ -1,6 +1,3 @@
-logger:
-  baud_rate: 0
-
 sensor:
   - platform: template
     name: "${device_name} - ${Temperature}"
