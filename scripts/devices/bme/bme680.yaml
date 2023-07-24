@@ -21,5 +21,5 @@ sensor:
       oversampling: 16x
     i2c_id: i2c_1
     address: ${I2C_BME}
-    iir_filter: 16x
+    iir_filter: 31x
     update_interval: 30s
