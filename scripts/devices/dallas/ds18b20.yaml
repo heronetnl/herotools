@@ -1,0 +1,12 @@
+---
+substitutions:
+  USE_DS18B20: "true"
+
+sensor:
+  # Dallas DS18B20 temperature sensor
+  - platform: dallas
+    dallas_id: dallas_1
+    #name: "${device_name} - Temperature"
+    id: DS18B20_temp
+    unit_of_measurement: ${TM}
+    index: 0

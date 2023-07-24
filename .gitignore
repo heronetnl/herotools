@@ -4,3 +4,6 @@ secrets.yaml
 empty.yaml
 .esphome
 .vscode
+*.xlsx
+todo
+pcbs/

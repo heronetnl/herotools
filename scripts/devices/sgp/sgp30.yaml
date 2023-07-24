@@ -1,0 +1,17 @@
+---
+sensor:
+  # SGP30 CO₂ and Volatile Organic Compound Sensor
+  - platform: sgp30
+    eco2:
+      name: "${device_name} - eCO2"
+      accuracy_decimals: 1
+    tvoc:
+      name: "${device_name} - TVOC"
+      accuracy_decimals: 1
+    store_baseline: yes
+    i2c_id: i2c_1
+    address: ${I2C_SGP30}
+    update_interval: 1s
+    compensation:
+      temperature_source: temperature
+      humidity_source: humidity

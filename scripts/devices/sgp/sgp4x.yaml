@@ -1,0 +1,14 @@
+---
+sensor:
+  # SGP40 Volatile Organic Compound Sensor
+  - platform: sgp4x
+    voc:
+      name: "${device_name} - VOC Index"
+      id: iaq
+    nox:
+      name: "${device_name} - NOx"
+    store_baseline: true
+    update_interval: 1s
+    compensation:
+      temperature_source: temperature
+      humidity_source: humidity

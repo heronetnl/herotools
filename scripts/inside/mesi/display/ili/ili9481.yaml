@@ -5,11 +5,12 @@ packages:
     ref: main
     files:
       - scripts/protocols/esp32/spi/spi_1.yaml
+      - scripts/colors.yaml
+      - scripts/fonts.yaml
     refresh: 0d
 
 display:
   - platform: ili9xxx
-    model: ili9486
-    dc_pin: GPIO35
-    reset_pin: GPIO25
-    lambda: |-
+    model: ili9481
+    dc_pin: GPIO32
+    reset_pin: GPIO33

@@ -1,0 +1,15 @@
+---
+substitutions:
+  USE_DHT: "true"
+
+sensor:
+  - platform: dht
+    pin: ${DHT_PIN}
+    temperature:
+      id: dht_temp
+      internal: True
+    humidity:
+      id: ght_hum
+      internal: True
+    update_interval: 30s
+    model: DHT11

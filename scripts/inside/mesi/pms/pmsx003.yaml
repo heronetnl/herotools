@@ -1,3 +1,11 @@
+packages:
+  remote_package:
+    url: https://github.com/heronetnl/herotool/
+    ref: main
+    files:
+      - scripts/protocols/esp32/uart/pmsx003.yaml
+    refresh: 0d
+
 sensor:
   - platform: pmsx003
     type: PMSX003

@@ -1,54 +1,81 @@
+---
+logger:
+  baud_rate: 0
+
 sensor:
-
-  #dallas temperature sensor
-  - platform: dallas
-    dallas_id: dallas_1
-    name: "${device_name} Temperature"
+  - platform: template
+    name: "${device_name} - ${Temperature}"
     id: temperature
+    lambda: |-
+      if (to_string("${USE_DS18B20}") == "true"){
+        return id(DS18B20_temp).state;
+      }
+      else if (to_string("${USE_AHT}") == "true"){
+        return id(aht_temp).state;
+      }
+      else if (to_string("${USE_BME}") == "true"){
+        return id(bme_temp).state;
+      }
+      else if (to_string("${USE_DHT}") == "true"){
+        return id(dht_temp).state;
+      }
+      else {
+        return -99;
+      }
     unit_of_measurement: ${TM}
-    index: 0
 
-  - platform: aht10
-    temperature:
-      #name: "${device_name} ${Temperature}"
-      id: aht_temp
-      unit_of_measurement: ${TM}
-      internal: true
-    humidity:
-      name: "${device_name} ${Humidity}"
-      id: aht_hum
-    i2c_id: i2c_1
-    update_interval: 30s
+  - platform: template
+    name: "${device_name} - ${Humidity}"
+    id: humidity
+    lambda: |-
+      if(to_string("${USE_AHT}") == "true"){
+        return id(aht_hum).state;
+      }
+      else if (to_string("${USE_BME}") == "true"){
+        return id(bme_hum).state;
+      }
+      else if (to_string("${USE_DHT}") == "true"){
+        return id(dht_hum).state;
+      }
+      else {
+        return -99;
+      }
+    unit_of_measurement: "%"
+    accuracy_decimals: 0
 
-  # SGP30 CO₂ and Volatile Organic Compound Sensor
-  - platform: sgp30
-    eco2:
-      name: "${device_name} eCO2"
-      accuracy_decimals: 1
-    tvoc:
-      name: "${device_name} TVOC"
-      accuracy_decimals: 1
-    store_baseline: yes
-    i2c_id: i2c_1
-    address: 0x58
-    update_interval: 30s
-    compensation:
-      temperature_source: temperature
-      humidity_source: aht_hum
+  - platform: template
+    name: "${device_name} - ${Pressure}"
+    id: pressure
+    lambda: |-
+      if (to_string("${USE_BME}") == "true"){
+        return id(bme_pres).state;
+      }
+      else {
+        return -99;
+      }
 
-  # SGP40 Volatile Organic Compound Sensor
-  - platform: sgp4x
-    voc:
-      name: "${device_name} VOC Index"
-      id: iaq
-    store_baseline: true
-    compensation:
-      temperature_source: temperature
-      humidity_source: aht_hum
+  # Absolute Humidity
+  - platform: absolute_humidity
+    name: "${device_name} - ${Absolute_humidity}"
+    id: Absolute_Humidity
+    temperature: temperature
+    humidity: humidity
+
+  # Dew point
+  - platform: template
+    name: "${device_name} - ${Dew_point}"
+    id: Dew_Point
+    lambda: |-
+      return (243.5*(log(id(humidity).state/100)+((17.67*id(temperature).state)/
+      (243.5+id(temperature).state)))/(17.67-log(id(humidity).state/100)-
+      ((17.67*id(temperature).state)/(243.5+id(temperature).state))));
+    unit_of_measurement: °C
+    icon: 'mdi:thermometer-alert'
 
 # Text_sensoren
 text_sensor:
 
+  # IAQ Classification
   - platform: template
     name: "IAQ Classification"
     icon: "mdi:seed"

@@ -1,0 +1,15 @@
+---
+substitutions:
+  USE_AHT: "true" 
+
+sensor:
+  - platform: aht10
+    temperature:
+      id: aht_temp
+      unit_of_measurement: ${TM}
+      internal: true
+    humidity:
+      id: aht_hum
+      internal: true
+    i2c_id: i2c_1
+    update_interval: 30s

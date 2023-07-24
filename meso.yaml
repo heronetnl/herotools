@@ -3,9 +3,6 @@ substitutions:
   device_friendlyname: Multi_envi_sensor_outside
   device_discription: "Multi enviroment sensor outside"
 
-  # Type of Language 
-  language: "nl-NL"
-
 esp32:
   board: esp32dev
 
@@ -43,6 +40,6 @@ packages:
       - scripts/basis.yaml
 
       # Get language file
-      - scripts/language/${language}.yaml
+      - scripts/language/.yaml
 
     refresh: 0d

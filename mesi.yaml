@@ -7,6 +7,12 @@ substitutions:
   # Type of measurement for temperature: °C for Celcius, °F for Fahrenheit
   TM: "°C"
 
+  #### I2C Address ####
+
+  I2C_BME: 0x76
+  I2C_SGP30: 0x58
+
+
 esp32:
   board: esp32dev
 
@@ -49,16 +55,19 @@ packages:
       # Get protocols file's
       - scripts/protocols/esp32/i2c/i2c_1.yaml
       - scripts/protocols/esp32/pin/dallas_1.yaml
-      - scripts/protocols/esp32/uart/pmsx003.yaml
 
       # Get sensor file's
+      - scripts/devices/dallas/ds18b20.yaml
+      - scripts/devices/aht/10-20-21.yaml
+      - scripts/devices/sgp/sgp30.yaml
+      - scripts/devices/sgp/sgp4x.yaml
       # Type of bme: bme280, bme680, bmp085, bmp280
       - scripts/inside/mesi/bme/bme680.yaml
 
       # Type of pms: pmsx003, pms5003s, pms5003t, pms5003ts, false
-      - scripts/inside/mesi/pms/pmsx003.yaml
+      #- scripts/inside/mesi/pms/pmsx003.yaml
 
       # Type of display: ili9488, false
-      - scripts/inside/mesi/display/ili9488.yaml
+      #- scripts/inside/mesi/display/ili9488.yaml
 
     refresh: 0d
