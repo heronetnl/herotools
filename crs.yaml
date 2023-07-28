@@ -1,10 +1,7 @@
 substitutions:
   device_name: crs
-  device_friendlyname: Centra_relay_station
-  device_discription: ""
-
-  # Type of Language 
-  language: "nl-NL"
+  device_friendlyname: Central_Relay_Station
+  device_discription: "Central Relay Station"
 
 esp32:
   board: esp32dev
