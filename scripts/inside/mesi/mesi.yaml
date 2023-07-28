@@ -12,9 +12,6 @@ sensor:
       else if (to_string("${USE_BME}") == "true"){
         return id(bme_temp).state;
       }
-      else if (to_string("${USE_DHT}") == "true"){
-        return id(dht_temp).state;
-      }
       else {
         return -99;
       }
@@ -29,9 +26,6 @@ sensor:
       }
       else if (to_string("${USE_BME}") == "true"){
         return id(bme_hum).state;
-      }
-      else if (to_string("${USE_DHT}") == "true"){
-        return id(dht_hum).state;
       }
       else {
         return -99;
