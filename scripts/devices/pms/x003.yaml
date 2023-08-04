@@ -1,7 +1,7 @@
 packages:
   remote_package_two:
-    url: https://github.com/heronetnl/herotool/
-    ref: main
+    url: https://github.com/heronetnl/herotools/
+    ref: dev
     files:
       - scripts/protocols/esp32/uart/pmsx003.yaml
     refresh: 0d
