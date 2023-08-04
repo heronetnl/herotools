@@ -3,7 +3,7 @@ logger:
 
 sensor:
   - platform: template
-    name: "${device_name} - ${Temperature}"
+    name: "${Temperature}"
     id: temperature
     lambda: |-
       if (to_string("${USE_DS18B20}") == "true"){
@@ -21,7 +21,7 @@ sensor:
     unit_of_measurement: ${TM}
 
   - platform: template
-    name: "${device_name} - ${Humidity}"
+    name: "${Humidity}"
     id: humidity
     lambda: |-
       if(to_string("${USE_AHT}") == "true"){
@@ -37,7 +37,7 @@ sensor:
     accuracy_decimals: 0
 
   - platform: template
-    name: "${device_name} - ${Pressure}"
+    name: "${Pressure}"
     id: pressure
     lambda: |-
       if (to_string("${USE_BME}") == "true"){
@@ -49,14 +49,14 @@ sensor:
 
   # Absolute Humidity
   - platform: absolute_humidity
-    name: "${device_name} - ${Absolute_humidity}"
+    name: "${Absolute_humidity}"
     id: Absolute_Humidity
     temperature: temperature
     humidity: humidity
 
   # Dew point
   - platform: template
-    name: "${device_name} - ${Dew_point}"
+    name: "${Dew_point}"
     id: Dew_Point
     lambda: |-
       return (243.5*(log(id(humidity).state/100)+((17.67*id(temperature).state)/
