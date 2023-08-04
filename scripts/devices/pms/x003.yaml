@@ -1,5 +1,5 @@
 packages:
-  remote_package:
+  remote_package_two:
     url: https://github.com/heronetnl/herotool/
     ref: main
     files:
