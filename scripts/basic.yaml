@@ -12,8 +12,6 @@ captive_portal:
 
 ota:
 
-logger:
-
 # Get time
 time:
   - platform: homeassistant
