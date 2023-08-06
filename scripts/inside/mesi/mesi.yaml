@@ -74,25 +74,123 @@ text_sensor:
     icon: "mdi:seed"
     lambda: |-
       if ( int(id(iaq).state) <= 50) {
-        return to_string("${Excellent}");
+        if ( int(id(tvoc).state) <= 65) {
+          return to_string("${Excellent}");
+        }
+        else if ( int(id(tvoc).state) >= 66 && int(id(tvoc).state) <= 220){
+          return to_string("${Good}");
+        }
+        else if ( int(id(tvoc).state) >= 221 && int(id(tvoc).state) <= 660){
+          return to_string("${Lightly_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 661 && int(id(tvoc).state) <= 1430){
+          return to_string("${Moderately_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 1431 && int(id(tvoc).state) <= 2200){
+          return to_string("${Heavily_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 2201 && int(id(tvoc).state) <= 3300){
+          return to_string("${Severely_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else if (int(id(iaq).state) >= 51 && int(id(iaq).state) <= 100) {
-        return to_string("${Good}");
+        if ( int(id(tvoc).state) <= 220){
+          return to_string("${Good}");
+        }
+        else if ( int(id(tvoc).state) >= 221 && int(id(tvoc).state) <= 660){
+          return to_string("${Lightly_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 661 && int(id(tvoc).state) <= 1430){
+          return to_string("${Moderately_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 1431 && int(id(tvoc).state) <= 2200){
+          return to_string("${Heavily_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 2201 && int(id(tvoc).state) <= 3300){
+          return to_string("${Severely_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else if (int(id(iaq).state) >= 101 && int(id(iaq).state) <= 150) {
-        return to_string("${Lightly_polluted}");
+        if ( int(id(tvoc).state) <= 660){
+          return to_string("${Lightly_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 661 && int(id(tvoc).state) <= 1430){
+          return to_string("${Moderately_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 1431 && int(id(tvoc).state) <= 2200){
+          return to_string("${Heavily_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 2201 && int(id(tvoc).state) <= 3300){
+          return to_string("${Severely_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else if (int(id(iaq).state) >= 151 && int(id(iaq).state) <= 200) {
-        return to_string("${Moderately_polluted}");
+        if ( int(id(tvoc).state) <= 1430){
+          return to_string("${Moderately_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 1431 && int(id(tvoc).state) <= 2200){
+          return to_string("${Heavily_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 2201 && int(id(tvoc).state) <= 3300){
+          return to_string("${Severely_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else if (int(id(iaq).state) >= 201 && int(id(iaq).state) <= 250) {
-        return to_string("${Heavily_polluted}");
+        if ( int(id(tvoc).state) <= 2200){
+          return to_string("${Heavily_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 2201 && int(id(tvoc).state) <= 3300){
+          return to_string("${Severely_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else if (int(id(iaq).state) >= 251 && int(id(iaq).state) <= 350) {
-        return to_string("${Severely_polluted}");
+        if ( int(id(tvoc).state) <= 3300){
+          return to_string("${Severely_polluted}");
+        }
+        else if ( int(id(tvoc).state) >= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else if (int(id(iaq).state) >= 351) {
-        return to_string("${Extremely_polluted}");
+        if ( int(id(tvoc).state) <= 3301){
+          return to_string("${Extremely_polluted}");
+        }
+        else {
+          return to_string("${error}");
+        }
       }
       else {
         return to_string("${error}");
