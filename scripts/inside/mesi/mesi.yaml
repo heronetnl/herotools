@@ -35,6 +35,7 @@ sensor:
       }
     unit_of_measurement: "%"
     accuracy_decimals: 0
+    icon: 'mdi:water-percent'
 
   - platform: template
     name: "${Pressure}"
@@ -46,6 +47,8 @@ sensor:
       else {
         return -99;
       }
+    unit_of_measurement: "hPa"
+    icon: 'mdi:gauge'
 
   # Absolute Humidity
   - platform: absolute_humidity
