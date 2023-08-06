@@ -185,7 +185,7 @@ text_sensor:
         }
       }
       else if (int(id(iaq).state) >= 351) {
-        if ( int(id(tvoc).state) <= 3301){
+        if ( int(id(tvoc).state) <= 60000){
           return to_string("${Extremely_polluted}");
         }
         else {
