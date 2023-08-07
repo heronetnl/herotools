@@ -1,5 +1,5 @@
 packages:
-  remote_package_two:
+  pms_uart:
     url: https://github.com/heronetnl/herotools/
     ref: dev
     files:

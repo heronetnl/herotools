@@ -14,6 +14,15 @@ sensor:
     i2c_id: i2c_1
     address: ${I2C_SGP30}
     update_interval: 1s
+    baseline:
+      eco2_baseline: 0x86C5  ## need to change
+      tvoc_baseline: 0x8B38  ## need to change
     compensation:
       temperature_source: temperature
       humidity_source: humidity
+    eco2_baseline:
+      id: eco2baseline
+      internal: true
+    tvoc_baseline:
+      id: tvocbaseline
+      internal: true
