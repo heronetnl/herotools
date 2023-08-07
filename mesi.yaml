@@ -9,9 +9,16 @@ substitutions:
 
   #### I2C Address ####
 
-  I2C_BME: 0x76
-  I2C_SGP30: 0x58
+  I2C_BME: "0x76"
+  I2C_SGP30: "0x58"
 
+  #### Use temperature sensor ####
+  # 
+  Use_Temp: ""
+
+  #### Use humidity sensor ####
+  #
+  Use_Hum: ""
 
 esp32:
   board: esp32dev
