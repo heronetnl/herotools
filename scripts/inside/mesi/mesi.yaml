@@ -1,6 +1,15 @@
 logger:
   baud_rate: 0
 
+globals:
+  - id: sgp30_eco2_baseline
+    type: int
+    restore_value: yes
+
+  - id: sgp30_tvoc_baseline
+    type: int
+    restore_value: yes
+
 sensor:
   - platform: template
     name: "${Temperature}"
