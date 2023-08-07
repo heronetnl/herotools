@@ -73,7 +73,7 @@ text_sensor:
 
   # IAQ Classification
   - platform: template
-    name: "IAQ Classification"
+    name: "${Air_quality}"
     icon: "mdi:seed"
     lambda: |-
       if ( int(id(iaq).state) <= 50) {

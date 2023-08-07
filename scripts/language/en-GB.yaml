@@ -16,6 +16,7 @@ substitutions:
   Pressure: "Pressure"
   Absolute_humidity: "Absolute humidity"
   Dew_point: "Dew point"
+  Air_quality: "Air quality"
   Formaldehyde: "Formaldehyde"
 
   # Pms
