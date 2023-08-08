@@ -10,7 +10,7 @@ api:
 
 globals:
   - id: sgp30_eco2_baseline
-    type: float
+    type: int
     restore_value: yes
 
   - id: sgp30_tvoc_baseline
@@ -33,7 +33,7 @@ sensor:
     address: ${I2C_SGP30}
     update_interval: 1s
     baseline:
-      eco2_baseline: sgp30_eco2_baseline
+      eco2_baseline: int(id(sgp30_eco2_baseline).state)
       #eco2_baseline: 0x86C5  ## need to change auto
       tvoc_baseline: 0x8B38  ## need to change auto
     compensation:
