@@ -1,10 +1,11 @@
+---
 substitutions:
   USE_DS18B20: "true"
 
 packages:
   dallas_pin:
     url: https://github.com/heronetnl/herotools/
-    ref: main
+    ref: dev
     files:
       - scripts/protocols/esp32/pin/dallas_1.yaml
     refresh: 0d
@@ -13,7 +14,6 @@ sensor:
   # Dallas DS18B20 temperature sensor
   - platform: dallas
     dallas_id: dallas_1
-    #name: "${device_name} - Temperature"
     id: DS18B20_temp
     unit_of_measurement: ${TM}
     index: 0
