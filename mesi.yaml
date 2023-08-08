@@ -13,12 +13,12 @@ substitutions:
   I2C_SGP30: "0x58"
 
   #### Use temperature sensor ####
-  # 
-  Use_Temp: ""
+  # AHT, BME, DS18B20. (Default DS18B20)
+  Use_Temp: "DS18B20"
 
   #### Use humidity sensor ####
-  #
-  Use_Hum: ""
+  # AHT, BME. (Default AHT)
+  Use_Hum: "AHT"
 
 esp32:
   board: esp32dev

@@ -6,13 +6,13 @@ sensor:
     name: "${Temperature}"
     id: temperature
     lambda: |-
-      if (to_string("${USE_DS18B20}") == "true"){
+      if (to_string("${Use_Temp}") == "DS18B20"){
         return id(DS18B20_temp).state;
       }
-      else if (to_string("${USE_AHT}") == "true"){
+      else if (to_string("${Use_Temp}") == "AHT"){
         return id(aht_temp).state;
       }
-      else if (to_string("${USE_BME}") == "true"){
+      else if (to_string("${Use_Temp}") == "BME"){
         return id(bme_temp).state;
       }
       else {
@@ -24,10 +24,10 @@ sensor:
     name: "${Humidity}"
     id: humidity
     lambda: |-
-      if(to_string("${USE_AHT}") == "true"){
+      if(to_string("${Use_Hum}") == "AHT"){
         return id(aht_hum).state;
       }
-      else if (to_string("${USE_BME}") == "true"){
+      else if (to_string("${Use_Hum}") == "BME"){
         return id(bme_hum).state;
       }
       else {
