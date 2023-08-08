@@ -1,3 +1,6 @@
+substitutions:
+  USE_DS18B20: "true"
+
 packages:
   dallas_pin:
     url: https://github.com/heronetnl/herotools/
@@ -5,9 +8,6 @@ packages:
     files:
       - scripts/protocols/esp32/pin/dallas_1.yaml
     refresh: 0d
-
-substitutions:
-  USE_DS18B20: "true"
 
 sensor:
   # Dallas DS18B20 temperature sensor
