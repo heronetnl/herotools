@@ -7,7 +7,7 @@ api:
       then:
         - globals.set:
           id: sgp30_eco2_baseline
-          value: !lamba "return String(Eco2_baseline, hex)"
+          value: !lamba "return String(Eco2_baseline, HEX)"
 
 globals:
   - id: sgp30_eco2_baseline
