@@ -6,7 +6,6 @@ packages:
       - scripts/protocols/esp32/pin/dallas_1.yaml
     refresh: 0d
 
----
 substitutions:
   USE_DS18B20: "true"
 
