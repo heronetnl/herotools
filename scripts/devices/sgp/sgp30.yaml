@@ -1,6 +1,6 @@
 api:
   services:
-    - service: "Set_sgp30_eco2_baseline"
+    - service: "set_sgp30_eco2_baseline"
       variables:
         Eco2_baseline: int
       then:
