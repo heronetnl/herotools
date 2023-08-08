@@ -1,15 +1,6 @@
 logger:
   baud_rate: 0
 
-globals:
-  - id: sgp30_eco2_baseline
-    type: int
-    restore_value: yes
-
-  - id: sgp30_tvoc_baseline
-    type: int
-    restore_value: yes
-
 sensor:
   - platform: template
     name: "${Temperature}"
@@ -43,6 +34,7 @@ sensor:
         return -99;
       }
     unit_of_measurement: "%"
+    device_class: "humidity"
     accuracy_decimals: 0
     icon: 'mdi:water-percent'
 
@@ -54,9 +46,10 @@ sensor:
         return id(bme_pres).state;
       }
       else {
-        return -99;
+        return -99999;
       }
     unit_of_measurement: "hPa"
+    device_class: "pressure"
     icon: 'mdi:gauge'
 
   # Absolute Humidity

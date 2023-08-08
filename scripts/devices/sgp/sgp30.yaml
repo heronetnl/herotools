@@ -1,4 +1,23 @@
 ---
+api:
+  services:
+    - service: "Set_sgp30_eco2_baseline"
+      variables:
+        Eco2_baseline: int
+      then:
+        - globals.set:
+          id: sgp30_eco2_baseline
+          value: !lamba "return String(Eco2_baseline, hex)"
+
+globals:
+  - id: sgp30_eco2_baseline
+    type: int
+    restore_value: yes
+
+  - id: sgp30_tvoc_baseline
+    type: int
+    restore_value: yes
+
 sensor:
   # SGP30 CO₂ and Volatile Organic Compound Sensor
   - platform: sgp30
