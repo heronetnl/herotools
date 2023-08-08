@@ -5,8 +5,8 @@ api:
         Eco2_baseline: int
       then:
         - globals.set:
-          id: sgp30_eco2_baseline
-          value: !lambda "return String(Eco2_baseline, HEX)"
+            id: sgp30_eco2_baseline
+            value: !lambda "return String(Eco2_baseline, HEX)"
 
 globals:
   - id: sgp30_eco2_baseline
