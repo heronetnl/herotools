@@ -10,7 +10,7 @@ api:
 
 globals:
   - id: sgp30_eco2_baseline
-    type: int
+    type: float
     restore_value: yes
 
   - id: sgp30_tvoc_baseline
