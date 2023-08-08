@@ -33,7 +33,7 @@ sensor:
     address: ${I2C_SGP30}
     update_interval: 1s
     baseline:
-      eco2_baseline: int(id(sgp30_eco2_baseline).state)
+      eco2_baseline: id(sgp30_eco2_baseline).state
       #eco2_baseline: 0x86C5  ## need to change auto
       tvoc_baseline: 0x8B38  ## need to change auto
     compensation:
