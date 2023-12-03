@@ -7,3 +7,4 @@ empty.yaml
 *.xlsx
 todo
 pcbs/
+herotools.code-workspace

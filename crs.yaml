@@ -33,16 +33,13 @@ dashboard_import:
 
 packages:
   remote_package:
-    url: https://github.com/heronetnl/herotools/
+    url: https://github.com/heronetnl/herotools
     ref: main
     files:
       # Get file's
-      - scripts/basis.yaml
+      - scripts/basic.yaml
 
       # Get language file
-      - scripts/language/${language}.yaml
-
-      # Get protocols file's
-      - scripts/protocols/i2c/i2c_1.yaml
+      - scripts/language/nl-NL.yaml
 
     refresh: 0d
