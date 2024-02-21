@@ -34,8 +34,8 @@ sensor:
     update_interval: 1s
     baseline:
       #eco2_baseline: id(sgp30_eco2_baseline).state
-      eco2_baseline: 0x86C5  ## need to change auto
-      tvoc_baseline: 0x8B38  ## need to change auto
+      eco2_baseline: 0x90FE  ## need to change auto
+      tvoc_baseline: 0x9C40  ## need to change auto
     compensation:
       temperature_source: temperature
       humidity_source: humidity
