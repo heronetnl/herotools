@@ -1,0 +1,38 @@
+text_sensor:
+  - platform: libretiny
+    version:
+      name: LibreTiny Version
+
+output:
+  - platform: libretiny_pwm
+    id: output_led_1
+    pin: P8
+
+light:
+  - platform: monochromatic
+    id: light_switch_1
+    output: output_led_1
+
+switch:
+  - platform: gpio
+    id: switch_1
+    name: Relay 1
+    pin: P6
+    on_turn_on:
+      - light.turn_on: light_switch_1
+    on_turn_off:
+      - light.turn_off: light_switch_1
+
+binary_sensor:
+  - platform: gpio
+    id: binary_switch_all
+    pin:
+      number: P7
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_1
+
+status_led:
+  pin: P26
