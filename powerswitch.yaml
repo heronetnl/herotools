@@ -43,6 +43,6 @@ packages:
       - scripts/language/nl-NL.yaml
 
       #
-      -scripts/powerswitch/1-polig.yaml
+      - scripts/powerswitch/1-polig.yaml
 
     refresh: 0d
