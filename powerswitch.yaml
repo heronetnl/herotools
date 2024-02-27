@@ -30,7 +30,7 @@ wifi:
 api:
 
 dashboard_import:
-  package_import_url: github://heronetnl/herotools/powerswitch.yaml@dev
+  package_import_url: github://heronetnl/herotools/powerswitch.yaml@main
   import_full_config: true
 
 packages:
