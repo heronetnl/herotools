@@ -2,6 +2,8 @@ substitutions:
   device_name: ps
   device_friendlyname: PowerSwitch
   device_discription: "power switch"
+  version: "0.0.2"
+  date: "19-02-2024"
 
 bk72xx:
   board: generic-bk7231n-qfn32-tuya

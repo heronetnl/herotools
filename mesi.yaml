@@ -2,6 +2,8 @@ substitutions:
   device_name: mesi
   device_friendlyname: Multi_envi_sensor_inside
   device_discription: "Multi enviroment sensor inside"
+  version: "0.0.2"
+  date: "19-02-2024"
 
   #### Measurement ####
   # Type of measurement for temperature: °C for Celcius, °F for Fahrenheit

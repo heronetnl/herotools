@@ -2,6 +2,8 @@ substitutions:
   device_name: meso
   device_friendlyname: Multi_envi_sensor_outside
   device_discription: "Multi enviroment sensor outside"
+  version: "0.0.2"
+  date: "19-02-2024"
 
 esp32:
   board: esp32dev
