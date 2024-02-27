@@ -1,7 +1,3 @@
-substitutions:
-  version: "0.0.1"
-  date: "17-06-2023"
-
 preferences:
   flash_write_interval: 120min
 
@@ -12,7 +8,7 @@ captive_portal:
 
 ota:
 
-logger:
+mdns:
 
 # Get time
 time:
@@ -40,17 +36,17 @@ text_sensor:
     # Get ip address from device
     ip_address:
       name: "${device_name} - ${Ip_address}"
-      id: s0tool_ip_adres
+      id: herotool_ip_adres
       icon: mdi:ip-network
     # Get ssid from device
     ssid:
       name: "${device_name} - ${Network}"
-      id: s0tool_netwerk
+      id: herotool_netwerk
       icon: mdi:access-point-network
     # Get Mac address from device
     mac_address:
       name: "${device_name} - ${Mac_address}"
-      id: s0tool_mac_adres
+      id: herotool_mac_adres
       icon: mdi:folder-key-network-outline
 
 # Buttons #

@@ -1,10 +1,9 @@
 substitutions:
   device_name: crs
-  device_friendlyname: Centra_relay_station
-  device_discription: ""
-
-  # Type of Language 
-  language: "nl-NL"
+  device_friendlyname: Central_Relay_Station
+  device_discription: "Central Relay Station"
+  version: "0.0.2"
+  date: "19-02-2024"
 
 esp32:
   board: esp32dev
@@ -36,16 +35,13 @@ dashboard_import:
 
 packages:
   remote_package:
-    url: https://github.com/heronetnl/herotools/
+    url: https://github.com/heronetnl/herotools
     ref: main
     files:
       # Get file's
-      - scripts/basis.yaml
+      - scripts/basic.yaml
 
       # Get language file
-      - scripts/language/${language}.yaml
-
-      # Get protocols file's
-      - scripts/protocols/i2c/i2c_1.yaml
+      - scripts/language/nl-NL.yaml
 
     refresh: 0d

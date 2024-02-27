@@ -2,6 +2,8 @@ substitutions:
   device_name: mesi
   device_friendlyname: Multi_envi_sensor_inside
   device_discription: "Multi enviroment sensor inside"
+  version: "0.0.2"
+  date: "19-02-2024"
 
   #### Measurement ####
   # Type of measurement for temperature: °C for Celcius, °F for Fahrenheit
@@ -9,9 +11,16 @@ substitutions:
 
   #### I2C Address ####
 
-  I2C_BME: 0x76
-  I2C_SGP30: 0x58
+  I2C_BME: "0x76"
+  I2C_SGP30: "0x58"
 
+  #### Use temperature sensor ####
+  # AHT, BME, DS18B20. (Default DS18B20)
+  Use_Temp: "DS18B20"
+
+  #### Use humidity sensor ####
+  # AHT, BME. (Default AHT)
+  Use_Hum: "AHT"
 
 esp32:
   board: esp32dev
@@ -45,8 +54,9 @@ packages:
   remote_package:
     url: https://github.com/heronetnl/herotools
     ref: main
+    # Get file's
     files:
-      # Get file's
+      # Get basic file
       - scripts/basic.yaml
 
       # Get language file
@@ -54,7 +64,6 @@ packages:
 
       # Get protocols file's
       - scripts/protocols/esp32/i2c/i2c_1.yaml
-      - scripts/protocols/esp32/pin/dallas_1.yaml
 
       # Get sensor file's
       - scripts/devices/dallas/ds18b20.yaml
@@ -69,5 +78,7 @@ packages:
 
       # Type of display: ili9488, false
       #- scripts/inside/mesi/display/ili9488.yaml
+
+      - scripts/inside/mesi/mesi.yaml
 
     refresh: 0d

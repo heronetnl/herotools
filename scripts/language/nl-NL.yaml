@@ -16,6 +16,7 @@ substitutions:
   Pressure: "Lucht druk"
   Absolute_humidity: "Absolute luchtvochtigheid"
   Dew_point: "Dauwpunt"
+  Air_quality: "Luchtkwaliteit"
   Formaldehyde: "Formaldehyde"
 
   # Pms

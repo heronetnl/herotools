@@ -1,0 +1,50 @@
+substitutions:
+  device_name: ps
+  device_friendlyname: PowerSwitch
+  device_discription: "power switch"
+  version: "0.0.2"
+  date: "19-02-2024"
+
+bk72xx:
+  board: generic-bk7231n-qfn32-tuya
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${device_friendlyname}
+  comment: "${device_discription}"
+  name_add_mac_suffix: false
+  project:
+    name: heronet.${device_name}
+    version: ${version}
+
+wifi:
+  # Remove leading '#' and fill in your wifi details
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: ${device_name}
+    ap_timeout: 10s
+
+api:
+
+dashboard_import:
+  package_import_url: github://heronetnl/herotools/powerswitch.yaml@dev
+  import_full_config: true
+
+packages:
+  remote_package:
+    url: https://github.com/heronetnl/herotools/
+    ref: dev
+    files:
+      # Get file's
+      - scripts/basic.yaml
+
+      # Get language file
+      - scripts/language/nl-NL.yaml
+
+      #
+      - scripts/inside/powerswitch/1-polig.yaml
+
+    refresh: 0d
