@@ -35,11 +35,10 @@ dashboard_import:
 
 packages:
   remote_package:
-    url: https://github.com/heronetnl/herotools
-    ref: main
-    # Get file's
+    url: https://github.com/heronetnl/herotools/
+    ref: dev
     files:
-      # Get basic file
+      # Get file's
       - scripts/basic.yaml
 
       # Get language file
